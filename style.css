@@ -1,0 +1,27 @@
+.container {
+    width: 500px;
+    margin-top: 100px;
+    background-color: rgb(61, 134, 13);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 10px #bebdbd;
+}
+
+.heading {
+    text-align: center;
+    background-color: #421111;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.container p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 50%;
+    color: #fff;
+    background-color: #df0c0c;
+    box-shadow: none;
+    border: none;
+}
