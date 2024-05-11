@@ -1,14 +1,14 @@
-var bt = document.getElementById("btSubmit");
+document.getElementById("btSubmit").onclick = function () {
+    var tien = +document.getElementById("ipSumMoney").value;
+    var nguoi = +document.getElementById("ipPeople").value;
+    var tip = +document.getElementById("tip").value;
 
-function tinh() {
-    var tien = Number(document.getElementById("ipSumMoney").value);
-    var nguoi = Number(document.getElementById("ipPeople").value);
-    var tip = Number(document.getElementById("tip").value);
     var kq = document.getElementById("result");
 
-    var tienMoiNguoi = (tien + (tien * tip) / 100) / nguoi;
-
-    kq.innerHTML = tienMoiNguoi.toFixed(2) + "$";
-}
-
-bt.onclick = tinh;
+    if (tien == "" || nguoi == "" || tip == "") {
+        alert(" Vui long nhap day du thong tin :::");
+    } else {
+        var tienMoiNguoi = (tien + (tien * tip) / 100) / nguoi;
+        kq.innerHTML = "🤴" + tienMoiNguoi.toFixed(2) + "$" + "🤴";
+    }
+};
